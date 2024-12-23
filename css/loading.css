@@ -70,22 +70,22 @@ body {
 }
 
 /* Селектор для всей полосы прокрутки */
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
 	width: 10px; /* Ширина вертикального скроллбара */
 }
 
 /* Селектор для дорожки скроллбара */
-body::-webkit-scrollbar-track {
-	background: transparent; /* Цвет фона дорожки */
+::-webkit-scrollbar-track {
+	background: #1c140f; /* Цвет фона дорожки */
 }
 
 /* Селектор для ползунка (Thumb) */
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	background: #dc7000; /* Пример: полупрозрачный ползунок */
 	border-radius: 5px; /* Скругление углов */
 }
 
 /* Селектор для ползунка при наведении */
-body::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
 	background: #9c5100; /* Цвет при наведении */
 }
