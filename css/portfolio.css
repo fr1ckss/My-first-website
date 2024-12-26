@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+	font-family: 'Poppins-Bold';
+	src: url(../font/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+	font-family: 'Poppins-ExtraBold';
+	src: url(../font/Poppins/Poppins-ExtraBold.ttf);
+}
+@font-face {
+	font-family: 'Poppins';
+	src: url(../font/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+	font-family: 'Poppins-Extra';
+	src: url(../font/Poppins/Poppins-ExtraLight.ttf);
+}
+@font-face {
+	font-family: 'Poppins-Med';
+	src: url(../font/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+	font-family: 'Poppins-Reg';
+	src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+	font-family: 'Poppins-SemiBold';
+	src: url(../font/Poppins/Poppins-SemiBold.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: 'Poppins-Reg';
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	font-weight: 400;
+	font-size: 16px;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(26, 14, 1, 1) 100%
+	);
+}
+
+.wrapper {
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(26, 14, 1, 1) 100%
+	);
+	width: 100%;
+}
+
+.container {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 50px 0;
+}
+
+header span a.logo,
+footer div span a.logo {
+	text-transform: uppercase;
+	font-family: 'Poppins-ExtraBold';
+	font-size: 29px;
+}
+
+header nav {
+	float: right;
+	width: 50%;
+}
+
+header nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+
+header nav ul li.active::after {
+	content: '';
+	display: block;
+	width: 40px;
+	height: 5px;
+	background: #dc7000;
+	position: relative;
+	top: 5px;
+	left: -15px;
+}
+
+header nav ul li a {
+	transition: all 200ms ease;
+}
+
+header nav ul li:not(.active) a:not(.btn):hover {
+	border-bottom: 5px solid #dc7000;
+}
+
+header nav ul li a.btn,
+.port a.btn,
+.port2 a.btn,
+.port3 a.btn,
+.email .sub button {
+	background: #fa9021;
+	border: 1px solid #fa9021;
+	padding: 12px 23px;
+	border-radius: 6px;
+	transition: all 800ms ease;
+	cursor: pointer;
+}
+
+header nav ul li a.btn:hover,
+.port a.btn:hover,
+.port2 a.btn:hover,
+.port3 a.btn:hover,
+.email .sub button:hover {
+	background: transparent;
+	border: 1px solid #fa9021;
+	transition: all 500ms ease;
+}
+
+.hero {
+	margin: 110px 0;
+}
+
+.hero--text {
+	display: block;
+	margin-bottom: 45px;
+}
+
+.hero--text p {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.hero--text p span {
+	color: #e47500;
+}
+
+.hero--text h1 {
+	text-align: center;
+	font-family: 'Poppins-SemiBold';
+	margin-bottom: 13px;
+}
+
+.hero--text h4 {
+	font-family: 'Poppins-Med';
+	font-size: 16px;
+
+	/* line-height: 30px; */
+	line-height: 187%;
+	text-align: center;
+	color: #fff;
+}
+
+.hero--info {
+	background: #1c140f;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 91px;
+	margin-top: 45px;
+	margin-bottom: 120px;
+}
+
+.hero--info .block {
+	display: flex;
+	gap: 16px;
+	margin-top: 36px;
+}
+
+.hero--info .block img {
+	width: 55px;
+	height: 55px;
+}
+
+.hero--info .block div {
+	width: 65px;
+	height: 65px;
+}
+
+.hero--info .line {
+	width: 2px; /* Толщина линии */
+	height: 128px; /* Высота линии */
+	background-color: #eeeff2; /* Цвет линии */
+	margin: 0 20px; /* Отступы между элементами */
+}
+
+.cont2 {
+	margin-left: 60px;
+}
+
+/* Промо видос */
+
+.video--info {
+	display: inline-block;
+	z-index: 2;
+	position: relative;
+	height: 370px;
+	margin-bottom: 180px;
+}
+
+.video--info img.play {
+	position: relative;
+	left: -380px;
+	top: -155px;
+	z-index: 1;
+	transition: all 500ms ease;
+}
+
+.video--info img.play:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.video--info h1 {
+	font-family: 'Poppins-Bold';
+	font-size: 30px;
+	width: 380px;
+	line-height: 180%;
+	color: #fff;
+	float: right;
+	margin-right: 160px;
+}
+
+.video--info > p {
+	width: 430px;
+	font-size: 14px;
+	line-height: 187%;
+	color: #fff;
+	float: right;
+	transform: translateY(-500%);
+	margin-right: 110px;
+	margin-bottom: 20px;
+}
+
+.video--info .punkt {
+	display: flex;
+	position: relative;
+	margin-bottom: 20px;
+	width: 220px;
+	top: -250px;
+	margin-left: 810px;
+}
+
+.video--info .punkt img {
+	display: flex;
+	margin-right: 10px;
+}
+
+/* Роботы */
+
+.port {
+	margin-bottom: 190px;
+}
+
+.port div h1 {
+	font-family: 'Poppins-Med';
+	font-size: 30px;
+	margin-bottom: 43px;
+	width: 470px;
+}
+
+.port div p {
+	font-size: 17px;
+	margin-bottom: 55px;
+	width: 540px;
+}
+
+.port a.btn {
+	border: 0;
+	border-radius: 0;
+}
+
+.port a.btn:hover {
+	border: 0;
+	background: #9c5100;
+}
+
+.port img {
+	position: absolute;
+	transform: translate(150%, -95%);
+}
+
+.port2 {
+	margin-bottom: 190px;
+}
+
+.port2 div h1 {
+	font-family: 'Poppins-Med';
+	font-size: 30px;
+	margin-bottom: 43px;
+	width: 470px;
+}
+
+.port2 div p {
+	font-size: 17px;
+	margin-bottom: 55px;
+	width: 540px;
+}
+
+.port2 a.btn {
+	border: 0;
+	border-radius: 0;
+}
+
+.port2 a.btn:hover {
+	border: 0;
+	background: #9c5100;
+}
+
+.port2 .cont2 {
+	transform: translate(120%);
+	width: 536px;
+}
+
+.port2 img {
+	position: absolute;
+	margin-left: 60px;
+	transform: translateY(-95%);
+}
+
+.port3 {
+	margin-bottom: 170px;
+}
+
+.port3 div h1 {
+	font-family: 'Poppins-Med';
+	font-size: 30px;
+	margin-bottom: 43px;
+	width: 470px;
+}
+
+.port3 div p {
+	font-size: 17px;
+	margin-bottom: 55px;
+	width: 540px;
+}
+
+.port3 a.btn {
+	border: 0;
+	border-radius: 0;
+}
+
+.port3 a.btn:hover {
+	border: 0;
+	background: #9c5100;
+}
+
+.port3 img {
+	position: absolute;
+	transform: translate(150%, -95%);
+}
+
+/* Отзывы */
+
+.reviews {
+	background: #1c140f;
+	padding: 88px 31px 60px 109px;
+}
+
+.reviews > h1 {
+	font-family: 'Rubik', serif;
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 143%;
+	width: 447px;
+	text-align: center;
+	margin-left: 310px;
+	margin-bottom: 20px;
+}
+
+.reviews > p {
+	font-size: 14px;
+	width: 555px;
+	text-align: center;
+	margin-left: 260px;
+	line-height: 187%;
+	margin-bottom: 68px;
+}
+
+.info {
+	display: flex;
+	gap: 20px;
+}
+
+.info .reviews--info:not(.active) {
+	display: flex;
+	width: 360px;
+	height: 180px;
+	padding: 30px;
+	border-radius: 10px;
+	border: 2px solid #ddd;
+	background: transparent;
+}
+
+.info .active {
+	display: flex;
+	width: 360px;
+	height: 180px;
+	padding: 30px;
+	border-radius: 10px;
+	border: 2px solid #dc7000;
+	background: #0f0901;
+}
+
+.info .reviews--info:nth-child(2) {
+	padding-right: 5px;
+}
+
+.info .reviews--info:nth-child(3) {
+	padding-right: 5px;
+}
+
+.info .reviews--info > p {
+	position: absolute;
+	display: flex;
+	width: 340px;
+	height: 100px;
+	font-size: 14px;
+	line-height: 187%;
+	transform: translateY(80%);
+}
+
+.info .reviews--info .ava {
+	display: flex;
+	width: 220px;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.info .reviews--info .ava img {
+	width: 50px;
+	height: 50px;
+	margin-right: 21px;
+}
+
+.info .reviews--info .ava .client {
+	display: flex;
+	flex-direction: column;
+}
+
+.info .reviews--info .ava .client .country {
+	color: #4f5665;
+}
+
+.info .reviews--info .grade {
+	display: flex;
+	margin-left: 50px;
+	width: 70px;
+	height: 20px;
+}
+
+.info .reviews--info .grade img {
+	margin-left: 10px;
+	margin-top: 4px;
+	width: 16px;
+	height: 16px;
+}
+
+.reviews .pages {
+	display: flex;
+	gap: 15px;
+	margin-top: 80px;
+	width: 135px;
+}
+
+.reviews .pages div:not(.active) {
+	width: 15px;
+	height: 15px;
+	background: #dde0e4;
+	border-radius: 50%;
+}
+
+.reviews .pages .active {
+	width: 45px;
+	height: 15px;
+	background: #dc7000;
+	border-radius: 10px;
+}
+
+.reviews .arrow {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	width: 140px;
+	float: right;
+	position: relative;
+	top: -50px;
+	margin-right: 130px;
+	z-index: 2;
+}
+
+.reviews .arrow .left {
+	border: 2px solid #dc7000;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	transition: all 500ms ease;
+}
+
+.reviews .arrow .left img {
+	position: relative;
+	z-index: 1;
+	right: -17px;
+	top: 19px;
+}
+
+.reviews .arrow .left:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.reviews .arrow .right {
+	border: 2px solid #dc7000;
+	background: #dc7000;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	transition: all 500ms ease;
+}
+
+.reviews .arrow .right img {
+	position: relative;
+	z-index: 1;
+	right: -13px;
+	top: 13px;
+}
+
+.reviews .arrow .right:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+/* Подписка на рассылку */
+
+.email {
+	margin: 130px auto;
+}
+
+.email > h2 {
+	font-size: 30px;
+	font-family: 'Poppins-SemiBold';
+	line-height: 187%;
+	width: 210px;
+	margin-bottom: 30px;
+}
+
+.email > p {
+	font-size: 16px;
+	line-height: 187%;
+	width: 545px;
+	margin-bottom: 74px;
+}
+
+.email .sub {
+	display: flex;
+	background: #1b1b1b;
+	padding: 40px 3%;
+	width: 97%;
+	border-radius: 15px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.email .sub h2 {
+	margin-bottom: 18px;
+	font-size: 30px;
+	font-family: 'Poppins-Med';
+	width: 240px;
+}
+
+.email .sub p {
+	font-size: 17px;
+	width: 516px;
+}
+
+.email .sub input {
+	background: #fff;
+	color: #333;
+	outline: none;
+	border: 0;
+	border-radius: 8px;
+	padding: 20px 30px;
+	width: 280px;
+	margin-left: 100px;
+	position: relative;
+	padding-right: 130px;
+}
+
+.email .sub button {
+	position: absolute;
+	border: 0;
+	padding: 15px 23px;
+	right: 135px;
+	transform: translateY(10%);
+	transition: all 500ms ease;
+}
+
+.email .sub button:hover {
+	border: 0;
+	background: #9c5100;
+}
+
+/* Подвал */
+
+footer {
+	background: #070707;
+	padding: 50px 0 30px 0;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+
+.footer .blocks {
+	width: 375px;
+}
+
+.footer .blocks span a.logo {
+	font-size: 24px;
+}
+
+.footer .blocks p {
+	font-size: 16px;
+	margin: 15px 0 30px 0;
+	width: 350px;
+}
+
+.footer .blocks:nth-child(2) {
+	margin-left: 60px;
+}
+
+.footer .blocks:nth-child(3) {
+	margin-right: 100px;
+}
+
+.footer .blocks ul {
+	list-style: none;
+	margin-top: 15px;
+	line-height: 186%;
+}
+
+.footer .blocks h2 {
+	font-family: 'Poppins-Med';
+	font-size: 17px;
+}
+
+.footer .icons {
+	display: flex;
+	width: 184px;
+	height: 60px;
+	transform: translate(-130%, 180%);
+}
+
+.footer .icons img {
+	transition: all 500ms ease;
+}
+
+.footer .icons img:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+footer hr {
+	margin-bottom: 30px;
+}
+
+footer > p {
+	text-align: center;
+	transform: translateX(-2%);
+}
+
+.wrapper .loading {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.wrapper .loading .dot {
+	width: 25px;
+	height: 25px;
+	background: linear-gradient(
+		90deg,
+		rgba(180, 107, 58, 1) 0%,
+		rgba(253, 96, 29, 1) 50%,
+		rgba(252, 136, 69, 1) 100%
+	);
+	border-radius: 50%;
+	animation: bounce 1.5s infinite ease-in-out, color-change 1.5s infinite;
+}
+
+.wrapper .loading .dot:nth-child(2) {
+	animation-delay: 0.3s;
+}
+
+.wrapper .loading .dot:nth-child(3) {
+	animation-delay: 0.6s;
+}
+
+.wrapper .loading .dot:nth-child(4) {
+	animation-delay: 0.9s;
+}
+
+@keyframes bounce {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-30px);
+	}
+}
+
+@keyframes color-change {
+	0%,
+	100% {
+		background: linear-gradient(
+			90deg,
+			rgba(180, 107, 58, 1) 0%,
+			rgba(253, 96, 29, 1) 50%,
+			rgba(252, 136, 69, 1) 100%
+		);
+	}
+	50% {
+		background: linear-gradient(
+			90deg,
+			rgba(58, 107, 180, 1) 0%,
+			rgba(29, 96, 253, 1) 50%,
+			rgba(69, 136, 252, 1) 100%
+		);
+	}
+}
+
+/* Селектор для всей полосы прокрутки */
+::-webkit-scrollbar {
+	width: 10px; /* Ширина вертикального скроллбара */
+}
+
+/* Селектор для дорожки скроллбара */
+::-webkit-scrollbar-track {
+	background: #1c140f; /* Цвет фона дорожки */
+}
+
+/* Селектор для ползунка (Thumb) */
+::-webkit-scrollbar-thumb {
+	background: #dc7000; /* Пример: полупрозрачный ползунок */
+	border-radius: 5px; /* Скругление углов */
+}
+
+/* Селектор для ползунка при наведении */
+::-webkit-scrollbar-thumb:active {
+	background: #9c5100; /* Цвет при наведении */
+}
